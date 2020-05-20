@@ -1,6 +1,6 @@
 {
   "name": "BSRAtreeView",
-  "version": "1.0.1",
+  "version": "2.1.3",
   "summary": "RATreeView fix bug",
   "homepage": "https://github.com/Augustyniak/RATreeView",
   "screenshots": "https://raw.github.com/Augustyniak/RATreeView/master/Screens/animation.gif",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/BlackStarLang/RATreeView.git",
-    "tag": "v1.0.0"
+    "tag": "v2.1.3"
   },
   "platforms": {
     "ios": "7.0",
