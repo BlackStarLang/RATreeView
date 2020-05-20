@@ -8,12 +8,12 @@ target 'RATreeViewBasicExample' do
   pod 'RATreeView', :path => './../RATreeView.podspec.json'
 end
 
-target 'RATreeViewBasicExampleSwift' do
-  platform :ios, '7.0'
-  pod 'RATreeView', :path => './../RATreeView.podspec.json'
-end
-
-target 'RATreeViewTVExample' do
-  platform :tvos, '9.0'
-  pod 'RATreeView', :path => './../RATreeView.podspec.json'
-end
+#target 'RATreeViewBasicExampleSwift' do
+#  platform :ios, '7.0'
+#  pod 'RATreeView', :path => './../RATreeView.podspec.json'
+#end
+#
+#target 'RATreeViewTVExample' do
+#  platform :tvos, '9.0'
+#  pod 'RATreeView', :path => './../RATreeView.podspec.json'
+#end
