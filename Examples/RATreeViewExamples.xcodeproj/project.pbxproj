@@ -240,7 +240,6 @@
 				0626D6531BF89DCB00CD3B04 /* Frameworks */,
 				0626D6541BF89DCB00CD3B04 /* Resources */,
 				99CE48BC763FB690A0F307E6 /* [CP] Embed Pods Frameworks */,
-				D36EDCA03A965A689A3D4E5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,7 +259,6 @@
 				06A30D8B1D6A409F00ED86C3 /* Frameworks */,
 				06A30D8C1D6A409F00ED86C3 /* Resources */,
 				48DF3A45C9D83D69238AF2BE /* [CP] Embed Pods Frameworks */,
-				54F6A805C2587473DE5DD229 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,7 +278,6 @@
 				06B529141C00D901000F1D5B /* Frameworks */,
 				06B529151C00D901000F1D5B /* Resources */,
 				5ECCCE5B2B8C00A8C11E704B /* [CP] Embed Pods Frameworks */,
-				54A666AED1323CF1A3C6752E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -375,13 +372,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RATreeViewTVExample/Pods-RATreeViewTVExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RATreeView-tvOS/RATreeView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RATreeView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewTVExample/Pods-RATreeViewTVExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RATreeViewTVExample/Pods-RATreeViewTVExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		52459F23F737CC5E8A8F7800 /* [CP] Check Pods Manifest.lock */ = {
@@ -390,43 +390,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RATreeViewBasicExampleSwift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		54A666AED1323CF1A3C6752E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewBasicExampleSwift/Pods-RATreeViewBasicExampleSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		54F6A805C2587473DE5DD229 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewTVExample/Pods-RATreeViewTVExample-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		57B11C44ADFD65E9BDD14944 /* [CP] Check Pods Manifest.lock */ = {
@@ -435,13 +408,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RATreeViewTVExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5ECCCE5B2B8C00A8C11E704B /* [CP] Embed Pods Frameworks */ = {
@@ -450,13 +426,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RATreeViewBasicExampleSwift/Pods-RATreeViewBasicExampleSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RATreeView-iOS/RATreeView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RATreeView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewBasicExampleSwift/Pods-RATreeViewBasicExampleSwift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RATreeViewBasicExampleSwift/Pods-RATreeViewBasicExampleSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		609A9EB0890CB4A33B5223A1 /* [CP] Check Pods Manifest.lock */ = {
@@ -465,13 +444,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RATreeViewBasicExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		99CE48BC763FB690A0F307E6 /* [CP] Embed Pods Frameworks */ = {
@@ -480,28 +462,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RATreeViewBasicExample/Pods-RATreeViewBasicExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RATreeView-iOS/RATreeView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RATreeView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewBasicExample/Pods-RATreeViewBasicExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D36EDCA03A965A689A3D4E5A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewBasicExample/Pods-RATreeViewBasicExample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RATreeViewBasicExample/Pods-RATreeViewBasicExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

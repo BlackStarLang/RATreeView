@@ -1,6 +1,12 @@
 RATreeView (iOS 7.0+, tvOS 9.0+) 
 ==============
 
+fix bug ：
+修复 iOS13 tableview 的 UITableViewStyle 增加 UITableViewStyleInsetGrouped ，
+导致  + (RATreeViewStyle)treeViewStyleForTableViewStyle:(UITableViewStyle)tableViewStyle  报错
+
+注释：由于原作者未更新，所以fork了源代码，进行修改，重新发pod组件，命名 BSRAtreeView
+
 👷 Project created and maintained by [Rafał Augustyniak](http://augustyniak.me). You can find me on twitter ([@RaAugustyniak](https://twitter.com/RaAugustyniak)).
 
 
